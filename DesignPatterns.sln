@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyArraySort", "Behavi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Singleton", "02. Singleton", "{9222E9CA-6246-440A-B0B9-3867E0CBB47D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Behavioral\02. Singleton\Singleton\Singleton.csproj", "{6134A2C2-EE1E-4FD3-B1E4-905A7F5B61C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6134A2C2-EE1E-4FD3-B1E4-905A7F5B61C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6134A2C2-EE1E-4FD3-B1E4-905A7F5B61C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6134A2C2-EE1E-4FD3-B1E4-905A7F5B61C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6134A2C2-EE1E-4FD3-B1E4-905A7F5B61C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{D02ED29F-F012-44FE-896D-30827394758A} = {6E277913-E408-4478-B826-1A987746AC3D}
 		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF} = {6E277913-E408-4478-B826-1A987746AC3D}
 		{9222E9CA-6246-440A-B0B9-3867E0CBB47D} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
+		{6134A2C2-EE1E-4FD3-B1E4-905A7F5B61C1} = {9222E9CA-6246-440A-B0B9-3867E0CBB47D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B79B57A2-B8C0-4309-A55F-B811E1782B87}
