@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyLib", "Behavioral\01. Strategy\StrategyLib\StrategyLib.csproj", "{10949431-C10A-4857-A880-DD711CADBF77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{C29324D1-26C0-433C-BAB9-322A2BFCCD95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Strategy", "01. Strategy", "{6E277913-E408-4478-B826-1A987746AC3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Behavioral\01. Strategy\Strategy\Strategy.csproj", "{1923529D-C445-4D18-8FCE-EECF6DA495C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyAlternative", "Behavioral\01. Strategy\StrategyAlternative\StrategyAlternative.csproj", "{0A85CABB-4EBD-4E78-B245-43BC1619E117}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyCreatingInvoice", "Behavioral\01. Strategy\StrategyCreatingInvoice\StrategyCreatingInvoice.csproj", "{261CBCC7-B7F1-4A85-8FF7-0A9BC04E6881}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyShipping", "Behavioral\01. Strategy\StrategyShipping\StrategyShipping.csproj", "{D02ED29F-F012-44FE-896D-30827394758A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyArraySort", "Behavioral\01. Strategy\StrategyArraySort\StrategyArraySort.csproj", "{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Singleton", "02. Singleton", "{9222E9CA-6246-440A-B0B9-3867E0CBB47D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10949431-C10A-4857-A880-DD711CADBF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10949431-C10A-4857-A880-DD711CADBF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10949431-C10A-4857-A880-DD711CADBF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10949431-C10A-4857-A880-DD711CADBF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1923529D-C445-4D18-8FCE-EECF6DA495C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1923529D-C445-4D18-8FCE-EECF6DA495C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1923529D-C445-4D18-8FCE-EECF6DA495C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1923529D-C445-4D18-8FCE-EECF6DA495C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A85CABB-4EBD-4E78-B245-43BC1619E117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A85CABB-4EBD-4E78-B245-43BC1619E117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A85CABB-4EBD-4E78-B245-43BC1619E117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A85CABB-4EBD-4E78-B245-43BC1619E117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261CBCC7-B7F1-4A85-8FF7-0A9BC04E6881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261CBCC7-B7F1-4A85-8FF7-0A9BC04E6881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261CBCC7-B7F1-4A85-8FF7-0A9BC04E6881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261CBCC7-B7F1-4A85-8FF7-0A9BC04E6881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02ED29F-F012-44FE-896D-30827394758A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02ED29F-F012-44FE-896D-30827394758A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02ED29F-F012-44FE-896D-30827394758A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02ED29F-F012-44FE-896D-30827394758A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10949431-C10A-4857-A880-DD711CADBF77} = {6E277913-E408-4478-B826-1A987746AC3D}
+		{6E277913-E408-4478-B826-1A987746AC3D} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
+		{1923529D-C445-4D18-8FCE-EECF6DA495C8} = {6E277913-E408-4478-B826-1A987746AC3D}
+		{0A85CABB-4EBD-4E78-B245-43BC1619E117} = {6E277913-E408-4478-B826-1A987746AC3D}
+		{261CBCC7-B7F1-4A85-8FF7-0A9BC04E6881} = {6E277913-E408-4478-B826-1A987746AC3D}
+		{D02ED29F-F012-44FE-896D-30827394758A} = {6E277913-E408-4478-B826-1A987746AC3D}
+		{4D8B29C0-A4BF-4B39-ACE5-92FA321330CF} = {6E277913-E408-4478-B826-1A987746AC3D}
+		{9222E9CA-6246-440A-B0B9-3867E0CBB47D} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B79B57A2-B8C0-4309-A55F-B811E1782B87}
+	EndGlobalSection
+EndGlobal
