@@ -22,6 +22,7 @@ namespace Singleton.v3_BetterLocking
             get
             {
                 Logger.Log("Instance called.");
+                // double-checked locking algorithm
                 // acquire lock only when needed - if only instance is null ~~ better performance
                 if (instance == null)
                 {
