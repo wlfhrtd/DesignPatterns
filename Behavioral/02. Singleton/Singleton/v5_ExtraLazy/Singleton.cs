@@ -8,6 +8,7 @@ namespace Singleton.v5_ExtraLazy
         private static readonly Singleton instance = new Singleton();
 
         // accessing any public property WILL NOT initialize instance
+        // ^doesn't work anymore(check test) - it still causes init call so this solution is not 'very lazy' as v4
         public static readonly string SOMETHING = "something";
         public const double PI = 3.1415926;       
 
@@ -24,7 +25,7 @@ namespace Singleton.v5_ExtraLazy
             get
             {
                 Logger.Log("Instance called.");
-                return Nested.instance; // now only first instance call initializes it
+                return Nested.instance; // now only first instance call initializes it (once)
             }
         }
 
