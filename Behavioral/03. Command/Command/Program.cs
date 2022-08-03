@@ -1,6 +1,8 @@
-﻿using Command.Models;
+﻿using Command.Commands;
+using Command.Models;
 using Command.Repositories;
 using System;
+
 
 namespace Command
 {
@@ -13,11 +15,27 @@ namespace Command
 
             Product product = productRepository.FindOneByArticleId("SM7B");
 
-            shoppingCartRepository.Add(product);
-            shoppingCartRepository.IncreaseQuantity(product.ArticleId);
-            shoppingCartRepository.IncreaseQuantity(product.ArticleId);
-            shoppingCartRepository.IncreaseQuantity(product.ArticleId);
-            shoppingCartRepository.IncreaseQuantity(product.ArticleId);
+            //shoppingCartRepository.Add(product);
+            //shoppingCartRepository.IncreaseQuantity(product.ArticleId);
+            //shoppingCartRepository.IncreaseQuantity(product.ArticleId);
+            //shoppingCartRepository.IncreaseQuantity(product.ArticleId);
+            //shoppingCartRepository.IncreaseQuantity(product.ArticleId);
+
+            // using Command pattern to avoid direct interaction with repositories/storage
+            AddToCartCommand addToCartCommand = new(shoppingCartRepository, productRepository, product);
+            ChangeQuantityCommand increase = new(
+                ChangeQuantityCommand.Operation.Increase, shoppingCartRepository, productRepository, product);
+
+            CommandManager commandManager = new();
+            commandManager.Invoke(addToCartCommand);
+            commandManager.Invoke(increase);
+            commandManager.Invoke(increase);
+            commandManager.Invoke(increase);
+            commandManager.Invoke(increase);
+
+            PrintCart(shoppingCartRepository);
+
+            commandManager.Undo();
 
             PrintCart(shoppingCartRepository);
         }
