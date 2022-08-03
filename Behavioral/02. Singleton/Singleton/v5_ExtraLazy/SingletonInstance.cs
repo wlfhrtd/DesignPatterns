@@ -63,6 +63,7 @@ namespace Singleton.v5_ExtraLazy
             Assert.Equal(0, Logger.Output().Count(log => log.Contains("Constructor")));
 
             var greeting = Singleton.SOMETHING;
+            // var instance = Singleton.Instance;
 
             Assert.Equal(1, Logger.Output().Count(log => log.Contains("Constructor")));
 
