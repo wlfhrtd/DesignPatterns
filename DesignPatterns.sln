@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Bridge", "04. Bridge", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeInheritance", "Behavioral\04. Bridge\BridgeInheritance\BridgeInheritance.csproj", "{2DEAAF56-47DC-4D50-809A-E1B2C3FE7393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeComposition", "BridgeComposition\BridgeComposition.csproj", "{B1B5350C-301E-4B5C-9789-680CB56EDAD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeComposition", "Behavioral\04. Bridge\BridgeComposition\BridgeComposition.csproj", "{8DE92E50-9A46-447B-BA68-10E3372E0883}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,10 +75,10 @@ Global
 		{2DEAAF56-47DC-4D50-809A-E1B2C3FE7393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DEAAF56-47DC-4D50-809A-E1B2C3FE7393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DEAAF56-47DC-4D50-809A-E1B2C3FE7393}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B1B5350C-301E-4B5C-9789-680CB56EDAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1B5350C-301E-4B5C-9789-680CB56EDAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1B5350C-301E-4B5C-9789-680CB56EDAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1B5350C-301E-4B5C-9789-680CB56EDAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE92E50-9A46-447B-BA68-10E3372E0883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE92E50-9A46-447B-BA68-10E3372E0883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE92E50-9A46-447B-BA68-10E3372E0883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE92E50-9A46-447B-BA68-10E3372E0883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,7 +97,7 @@ Global
 		{565866B0-C8CB-44F0-91FF-9D931A920491} = {650745BB-4910-4030-9088-EA2C70F1D6DE}
 		{577A7163-C107-42A1-883E-E938A26CC3E7} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
 		{2DEAAF56-47DC-4D50-809A-E1B2C3FE7393} = {577A7163-C107-42A1-883E-E938A26CC3E7}
-		{B1B5350C-301E-4B5C-9789-680CB56EDAD5} = {577A7163-C107-42A1-883E-E938A26CC3E7}
+		{8DE92E50-9A46-447B-BA68-10E3372E0883} = {577A7163-C107-42A1-883E-E938A26CC3E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B79B57A2-B8C0-4309-A55F-B811E1782B87}
