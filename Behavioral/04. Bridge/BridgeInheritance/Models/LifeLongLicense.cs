@@ -1,11 +1,11 @@
 ﻿using System;
 
 
-namespace Bridge.Models
+namespace BridgeInheritance.Models
 {
     public class LifeLongLicense : MovieLicense
     {
-        public LifeLongLicense(string movie, DateTime purchaseDate) : base(movie, purchaseDate) { }
+        public LifeLongLicense(string movie, DateTime purchaseDate, Discount d) : base(movie, purchaseDate, d) { }
 
 
         public override DateTime? GetExpirationDate()
@@ -13,7 +13,7 @@ namespace Bridge.Models
             return null;
         }
 
-        public override decimal GetPrice()
+        protected override decimal GetPriceCore()
         {
             return 10m;
         }

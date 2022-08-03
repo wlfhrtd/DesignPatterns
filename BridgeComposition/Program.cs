@@ -1,17 +1,29 @@
-﻿using Bridge.Models;
+﻿using BridgeComposition.Models;
 using System;
 
-namespace Bridge
+
+namespace BridgeComposition
 {
     class Program
     {
         static void Main(string[] args)
         {
-            TwoDaysLicense l1 = new("Brother 2", DateTime.Now);
-            LifeLongLicense l2 = new("Matrix", DateTime.Now);
+            MovieLicense l1 = new("Brother 2", DateTime.Now, Discount.None, LicenceType.TwoDays);
+            MovieLicense l2 = new("Matrix", DateTime.Now, Discount.None, LicenceType.LifeLong);
 
             PrintDetails(l1);
             PrintDetails(l2);
+
+            MovieLicense l3 = new("Brother 2", DateTime.Now, Discount.Senior, LicenceType.TwoDays);
+            MovieLicense l4 = new("Matrix", DateTime.Now, Discount.Military, LicenceType.LifeLong);
+
+            PrintDetails(l3);
+            PrintDetails(l4);
+
+            MovieLicense l5 =new(
+                "Blade Runner", DateTime.Now, Discount.Senior, LicenceType.TwoDays, SpecialOffer.TwoDaysExtension);
+
+            PrintDetails(l5);
         }
 
         private static void PrintDetails(MovieLicense l)
