@@ -108,14 +108,14 @@ namespace StateNaive.Models
         }
 
         // no business logic
-        //public void DataPassed()
+        //public void DatePassed()
         //{
         //    ShowState("Closed");
         //    Console.WriteLine("Booking expired");
         //}
 
         // naive business logic enforcement
-        public void DataPassed()
+        public void DatePassed()
         {
             if (isNew)
             {
@@ -132,6 +132,7 @@ namespace StateNaive.Models
             }
         }
 
+        // high complexity method to maintain only part of business logic
         public void ProcessingComplete(Booking booking, ProcessingResult result)
         {
             // another business rule

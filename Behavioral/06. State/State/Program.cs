@@ -1,13 +1,13 @@
-﻿using StateNaive.Models;
+﻿using State.Models;
 using System;
 
-namespace StateNaive
+namespace State
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Booking b = new();
+            BookingContext b = new();
             Console.WriteLine();
             while (true)
             {
