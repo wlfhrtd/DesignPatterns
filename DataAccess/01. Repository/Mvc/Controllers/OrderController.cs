@@ -1,14 +1,11 @@
 ﻿using Domain.Models;
-using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Mvc.Models;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace Mvc.Controllers
 {
@@ -90,7 +87,6 @@ namespace Mvc.Controllers
                 LineItems = model.LineItems
                     .Select(line => new LineItem { ProductId = line.ProductId, Quantity = line.Quantity })
                     .ToList(),
-
                 Customer = customer
             };
             // old code leveraging EF DbContext directly

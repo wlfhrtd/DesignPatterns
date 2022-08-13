@@ -1,9 +1,7 @@
 ﻿using Domain.Models;
-using Infrastructure;
 using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Linq;
 
 
 namespace Mvc.Controllers
