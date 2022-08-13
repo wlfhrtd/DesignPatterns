@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Domain.Models;
 using Infrastructure;
 using Microsoft.Extensions.Hosting;
+using Infrastructure.Repositories;
 
 namespace Mvc
 {
@@ -33,6 +34,9 @@ namespace Mvc
             CreateInitialDatabase();
 
             services.AddTransient<ShoppingContext>();
+            services.AddTransient<IRepository<Customer>, CustomerRepository>();
+            services.AddTransient<IRepository<Order>, OrderRepository>();
+            services.AddTransient<IRepository<Product>, ProductRepository>();
         }
 
         public void CreateInitialDatabase()

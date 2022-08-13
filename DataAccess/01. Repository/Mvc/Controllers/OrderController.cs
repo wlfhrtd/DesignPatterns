@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Infrastructure;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Mvc.Models;
@@ -13,26 +14,57 @@ namespace Mvc.Controllers
 {
     public class OrderController : Controller
     {
-        private ShoppingContext context;
+        // strongly bound dependency which should be eliminated with Repository pattern
+        //private ShoppingContext context;
 
-        public OrderController()
+        //public OrderController()
+        //{
+        //    context = new ShoppingContext();
+        //}
+
+        // Repository pattern usage
+        private readonly IRepository<Order> orderRepository;
+
+        private readonly IRepository<Product> productRepository;
+
+
+        public OrderController(IRepository<Order> or, IRepository<Product> pr)
         {
-            context = new ShoppingContext();
+            orderRepository = or;
+            productRepository = pr;
         }
 
+        // old code leveraging EF DbContext directly
+        //public IActionResult Index()
+        //{
+        //    var orders = context.Orders
+        //        .Include(order => order.LineItems)
+        //        .ThenInclude(lineItem => lineItem.Product)
+        //        .Where(order => order.OrderDate > DateTime.UtcNow.AddDays(-1)).ToList();
+
+        //    return View(orders);
+        //}
+
+        // Repository pattern usage
         public IActionResult Index()
         {
-            var orders = context.Orders
-                .Include(order => order.LineItems)
-                .ThenInclude(lineItem => lineItem.Product)
-                .Where(order => order.OrderDate > DateTime.UtcNow.AddDays(-1)).ToList();
+            var orders = orderRepository.Find(o => o.OrderDate > DateTime.UtcNow.AddDays(-1)).ToList();
 
             return View(orders);
         }
 
+        // old code leveraging EF DbContext directly
+        //public IActionResult Create()
+        //{
+        //    var products = context.Products.ToList();
+
+        //    return View(products);
+        //}
+
+        // Repository pattern usage
         public IActionResult Create()
         {
-            var products = context.Products.ToList();
+            var products = productRepository.All();
 
             return View(products);
         }
@@ -61,10 +93,14 @@ namespace Mvc.Controllers
 
                 Customer = customer
             };
+            // old code leveraging EF DbContext directly
+            //context.Orders.Add(order);
+            //context.SaveChanges();
 
-            context.Orders.Add(order);
+            // Repository pattern usage
+            orderRepository.Add(order);
 
-            context.SaveChanges();
+            orderRepository.SaveChanges();
 
             return Ok("Order Created");
         }
