@@ -18,7 +18,8 @@ namespace UoWMvc.Controllers
         // Repository pattern usage
         private readonly IRepository<Customer> customerRepository;
 
-
+        // haven't brought UoW just to be more specific about repository usage;
+        // do not bring whole big UoW if not needed
         public CustomerController(IRepository<Customer> cr)
         {
             customerRepository = cr;
