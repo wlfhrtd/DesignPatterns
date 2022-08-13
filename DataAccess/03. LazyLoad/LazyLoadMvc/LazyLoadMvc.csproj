@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="orders.db-shm" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\UoWInfrastructure\UoWInfrastructure.csproj" />
+    <ProjectReference Include="..\LazyLoadInfrastructure\LazyLoadInfrastructure.csproj" />
   </ItemGroup>
 
 </Project>
