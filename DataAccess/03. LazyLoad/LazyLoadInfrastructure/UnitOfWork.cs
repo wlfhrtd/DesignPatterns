@@ -24,7 +24,7 @@ namespace LazyLoadInfrastructure
             context = shoppingContext;
         }
 
-
+        // Lazy Initialization
         private IRepository<Customer> customerRepository;
         public IRepository<Customer> CustomerRepository
             => customerRepository ??= new CustomerRepository(context);
