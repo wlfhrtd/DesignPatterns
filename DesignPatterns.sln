@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainValidation", "Behavior
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessing", "Behavioral\08. ChainOfResponsibility\PaymentProcessing\PaymentProcessing.csproj", "{AD016C50-EF95-4960-ADFC-3329EA74A4D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessingImproved", "Behavioral\08. ChainOfResponsibility\PaymentProcessingImproved\PaymentProcessingImproved.csproj", "{2220D593-9FA2-4173-8936-8A3C783912B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{AD016C50-EF95-4960-ADFC-3329EA74A4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD016C50-EF95-4960-ADFC-3329EA74A4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD016C50-EF95-4960-ADFC-3329EA74A4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2220D593-9FA2-4173-8936-8A3C783912B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2220D593-9FA2-4173-8936-8A3C783912B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2220D593-9FA2-4173-8936-8A3C783912B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2220D593-9FA2-4173-8936-8A3C783912B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -273,6 +279,7 @@ Global
 		{3EF4FB3B-B058-4478-A169-322825E394CF} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
 		{AE705852-A6C4-4F2F-AE51-FB56AEC82C83} = {3EF4FB3B-B058-4478-A169-322825E394CF}
 		{AD016C50-EF95-4960-ADFC-3329EA74A4D4} = {3EF4FB3B-B058-4478-A169-322825E394CF}
+		{2220D593-9FA2-4173-8936-8A3C783912B2} = {3EF4FB3B-B058-4478-A169-322825E394CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B79B57A2-B8C0-4309-A55F-B811E1782B87}
