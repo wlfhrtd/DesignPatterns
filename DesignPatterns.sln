@@ -103,9 +103,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middlewares", "Behavioral\0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. TemplateMethod", "09. TemplateMethod", "{1E8D5434-84E7-4654-AB3C-9D0BE4430453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "Behavioral\09. TemplateMethod\TemplateMethod\TemplateMethod.csproj", "{3829748B-C1D4-457B-94A5-891679CE507C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "Behavioral\09. TemplateMethod\TemplateMethod\TemplateMethod.csproj", "{3829748B-C1D4-457B-94A5-891679CE507C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodRefactored", "Behavioral\09. TemplateMethod\TemplateMethodRefactored\TemplateMethodRefactored.csproj", "{7CC3F299-43EC-4383-B985-083FEAD7BAFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethodRefactored", "Behavioral\09. TemplateMethod\TemplateMethodRefactored\TemplateMethodRefactored.csproj", "{7CC3F299-43EC-4383-B985-083FEAD7BAFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Visitor", "10. Visitor", "{D19670C3-28A3-4480-8B1F-49C2225A7170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Behavioral\10. Visitor\Visitor\Visitor.csproj", "{9167FEDF-0F91-46DB-9DCC-3D23EA9A09D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -257,6 +261,10 @@ Global
 		{7CC3F299-43EC-4383-B985-083FEAD7BAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC3F299-43EC-4383-B985-083FEAD7BAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC3F299-43EC-4383-B985-083FEAD7BAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9167FEDF-0F91-46DB-9DCC-3D23EA9A09D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9167FEDF-0F91-46DB-9DCC-3D23EA9A09D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9167FEDF-0F91-46DB-9DCC-3D23EA9A09D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9167FEDF-0F91-46DB-9DCC-3D23EA9A09D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -311,6 +319,8 @@ Global
 		{1E8D5434-84E7-4654-AB3C-9D0BE4430453} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
 		{3829748B-C1D4-457B-94A5-891679CE507C} = {1E8D5434-84E7-4654-AB3C-9D0BE4430453}
 		{7CC3F299-43EC-4383-B985-083FEAD7BAFC} = {1E8D5434-84E7-4654-AB3C-9D0BE4430453}
+		{D19670C3-28A3-4480-8B1F-49C2225A7170} = {C29324D1-26C0-433C-BAB9-322A2BFCCD95}
+		{9167FEDF-0F91-46DB-9DCC-3D23EA9A09D9} = {D19670C3-28A3-4480-8B1F-49C2225A7170}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B79B57A2-B8C0-4309-A55F-B811E1782B87}
