@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Behavioral\11. Memento\AppOriginator\AppOriginator.csproj" />
+    <ProjectReference Include="..\AppOriginator\AppOriginator.csproj" />
   </ItemGroup>
 
 </Project>
