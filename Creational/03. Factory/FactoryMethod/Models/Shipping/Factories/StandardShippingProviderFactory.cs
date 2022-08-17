@@ -1,11 +1,13 @@
-﻿using System;
+﻿using FactoryMethod.Models.Shipping.Factories.Base;
+using System;
 
-namespace SimpleFactory.Models.Shipping.Factories
+namespace FactoryMethod.Models.Shipping.Factories
 {
-    public class ShippingProviderFactory
+    public class StandardShippingProviderFactory : ShippingProviderFactory
     {
-        // non-extensible; for extensibility look for Factory Method
-        public static ShippingProvider CreateShippingProvider(string country)
+        // non-extensible; for extensibility look for Factory Method;
+        // should extract logic for extensibility
+        protected override ShippingProvider CreateShippingProvider(string country)
         {
             ShippingProvider shippingProvider;
 
