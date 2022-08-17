@@ -131,15 +131,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Creational\01. B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Prototype", "02. Prototype", "{B9F3A0D9-45DF-4D70-AE0B-9A29DC640EE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Creational\02. Prototype\Prototype\Prototype.csproj", "{3E06E0AB-94E7-4AA3-8CC0-73808F6F0337}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Creational\02. Prototype\Prototype\Prototype.csproj", "{3E06E0AB-94E7-4AA3-8CC0-73808F6F0337}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Factory", "03. Factory", "{1765F959-F6D5-455C-86D5-359F110917B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "Creational\03. Factory\SimpleFactory\SimpleFactory.csproj", "{09435E52-09C0-4770-9192-8F6AB5D31532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactory", "Creational\03. Factory\SimpleFactory\SimpleFactory.csproj", "{09435E52-09C0-4770-9192-8F6AB5D31532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "Creational\03. Factory\FactoryMethod\FactoryMethod.csproj", "{76C43FFC-8A50-449E-9649-7DA5B619EC65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "Creational\03. Factory\FactoryMethod\FactoryMethod.csproj", "{76C43FFC-8A50-449E-9649-7DA5B619EC65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "Creational\03. Factory\AbstractFactory\AbstractFactory.csproj", "{8B59DC2C-34DE-4898-9732-634E9389566A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Creational\03. Factory\AbstractFactory\AbstractFactory.csproj", "{8B59DC2C-34DE-4898-9732-634E9389566A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryTests", "Creational\03. Factory\FactoryTests\FactoryTests.csproj", "{674E79FB-1DBB-423C-A200-E611F55AB105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryProvider", "Creational\03. Factory\FactoryProvider\FactoryProvider.csproj", "{D967519F-99C0-4055-9F71-26862E32EBC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -327,6 +331,14 @@ Global
 		{8B59DC2C-34DE-4898-9732-634E9389566A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B59DC2C-34DE-4898-9732-634E9389566A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B59DC2C-34DE-4898-9732-634E9389566A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674E79FB-1DBB-423C-A200-E611F55AB105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674E79FB-1DBB-423C-A200-E611F55AB105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674E79FB-1DBB-423C-A200-E611F55AB105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674E79FB-1DBB-423C-A200-E611F55AB105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D967519F-99C0-4055-9F71-26862E32EBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D967519F-99C0-4055-9F71-26862E32EBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D967519F-99C0-4055-9F71-26862E32EBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D967519F-99C0-4055-9F71-26862E32EBC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -396,6 +408,8 @@ Global
 		{09435E52-09C0-4770-9192-8F6AB5D31532} = {1765F959-F6D5-455C-86D5-359F110917B4}
 		{76C43FFC-8A50-449E-9649-7DA5B619EC65} = {1765F959-F6D5-455C-86D5-359F110917B4}
 		{8B59DC2C-34DE-4898-9732-634E9389566A} = {1765F959-F6D5-455C-86D5-359F110917B4}
+		{674E79FB-1DBB-423C-A200-E611F55AB105} = {1765F959-F6D5-455C-86D5-359F110917B4}
+		{D967519F-99C0-4055-9F71-26862E32EBC0} = {1765F959-F6D5-455C-86D5-359F110917B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B79B57A2-B8C0-4309-A55F-B811E1782B87}

@@ -1,6 +1,7 @@
 ﻿using AbstractFactory.Models.Commerce;
 using AbstractFactory.Models.Commerce.AbstractFactory;
 using AbstractFactory.Models.Shipping;
+using System;
 
 namespace AbstractFactory
 {
@@ -17,6 +18,11 @@ namespace AbstractFactory
 
         public string Finalize()
         {
+            if (order.ShippingStatus == ShippingStatus.ReadyForShippment)
+            {
+                throw new InvalidOperationException();
+            }
+
             var shippingProvider = purchaseProvider.CreateShippingProvider(order);
 
             var invoice = purchaseProvider.CreateInvoice(order);
