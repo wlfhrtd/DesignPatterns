@@ -1,0 +1,3 @@
+﻿any client object to connect with remote web resources
+e.g. wrappers around HttpClient or DbConnection;
+actually mentioned classes are remote proxies as well wrapping protocols
